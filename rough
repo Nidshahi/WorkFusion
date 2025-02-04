@@ -1,0 +1,43 @@
+<div>
+  <h2>Register</h2>
+  <form onSubmit={handleRegister}>
+  <input
+      type="text"
+      value={name}
+      onChange={(e) => setName(e.target.value)}
+      placeholder="Write your name"
+      required
+    />
+    <input
+      type="email"
+      value={email}
+      onChange={(e) => setEmail(e.target.value)}
+      placeholder="Email"
+      required
+    />
+    <input
+      type="password"
+      value={password}
+      onChange={(e) => setPassword(e.target.value)}
+      placeholder="Password"
+      required
+    />
+    <select value={role} onChange={(e) => setRole(e.target.value)} 
+        required>
+      <option value={"employee"}>Employee</option>
+      <option value={"manager"}>Manager/Head</option>
+    </select>
+    <button type="submit">Register</button>
+  </form>
+ 
+  <a href="/" onClick={HandleNavigation}>Go to Dashboard</a>
+</div>
+);
+<div style={{ marginTop: "20px" }}>
+  <ul>
+    <li><Link to="/view-tasks">View Assigned Tasks</Link></li>
+    <li><Link to="/submit-tasks">Submit Completed Tasks</Link></li>
+    <li><Link to="/attendance">View Attendance</Link></li>
+    <li><Link to="/calendar">Check Calendar</Link></li>
+  </ul>
+</div>

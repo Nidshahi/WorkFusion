@@ -1,0 +1,44 @@
+.mytasks {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.mytasks h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.task-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.task-item h4 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+}
+
+.task-item p {
+  font-size: 16px;
+  margin: 0 0 10px 0;
+}
+
+.task-status {
+  display: flex;
+  align-items: center;
+}
+
+.task-status select {
+  margin-left: 10px;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.task-status label {
+  font-size: 16px;
+}

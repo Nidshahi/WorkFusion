@@ -1,0 +1,8 @@
+.input-group  .form-control:hover{
+  border-color: #34373b;
+  box-shadow: 0 0 5px rgba(63, 66, 69, 0.5);
+}
+.input-group  .form-control:focus{
+  border-color: #34373b;
+  box-shadow: 0 0 5px rgba(63, 66, 69, 0.5);
+}

@@ -1,0 +1,125 @@
+.div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 1;
+  width: 100%;
+  margin-left: 0;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.sec1 {
+  display: flex;
+  flex: 1;
+  min-width: 150px;
+  max-width: 300px;
+  align-items: center;  /* Ensures that label and input are aligned horizontally */
+  gap: 10px; /* Adds space between the label and input */
+}
+
+
+
+label {
+  align-self: center;
+  color:#16303c ;
+  font-size: 15px;
+  margin-right: 10px;
+}
+.sec1 .form-control:focus-within{
+  border-color: #34373b;
+  box-shadow: 0 0 5px rgba(63, 66, 69, 0.5);
+}
+.sec1 .form-select:focus-within{
+  border-color: #914719;
+  box-shadow: 0 0 5px rgba(63, 66, 69, 0.5);
+}
+input,
+select {
+  padding: 8px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  
+
+  .sec1 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  label {
+    font-size: 12px;
+  }
+
+  input,
+  select {
+    font-size: 12px;
+    padding: 6px;
+  }
+}
+
+table {
+  width: 100%; /* Makes the table span the entire width of its container */
+   
+  margin: 20px 0; /* Adds spacing above and below the table */
+}
+
+th, td {
+  border: 1px solid #ddd; /* Adds border between rows and columns */
+  text-align: left; /* Aligns text to the left */
+  padding: 8px; /* Adds padding inside each cell for better spacing */
+}
+
+thead th {
+  background-color: #f4f4f4; /* Gives a light gray background to header cells */
+  font-weight: bold;
+  color: #19394D; /* Makes header text bold */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Gives a slight background color to alternate rows */
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1; /* Highlights a row when hovered */
+}
+
+p {
+  margin-top: 250px;
+  text-align: center; /* Aligns the "No employees found" message to the center */
+  color: #223c4c; /* Gives the text a gray color */
+}
+
+.footer {
+  display: flex;
+  
+  align-items: end;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+ 
+  padding: 10px;
+}
+
+.footer input {
+  padding: 5px;
+  margin-right: 10px;
+  width: 200px;
+}
+
+.but {
+  padding: 5px 15px;
+  background-color: #2b5672;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.footer button:hover {
+  background-color: #335a75;
+  border:1px solid white;
+}

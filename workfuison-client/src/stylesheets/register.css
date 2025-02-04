@@ -1,0 +1,131 @@
+/* Set background for the entire page */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #7AB7BE; /* Set the background color for the whole page */
+  display: flex; /* Flexbox for alignment */
+  flex-direction: column;
+}
+/* Main body of the login component */
+.body {
+  flex: 1; /* Make this section grow to fill the available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #7AB7BE; /* Ensure consistent background color */
+  min-height: 100vh; /* Ensure it covers the entire viewport */
+  width: 100%; /* Full width */
+}
+
+/* Style for the section containing the form */
+.section1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  width: 20px;
+}
+.section1:focus{
+  border-color: #34373b;
+  box-shadow: 0 0 5px rgba(63, 66, 69, 0.5);
+}
+
+/* Styling for the login button */
+.login_button {
+  background-color: #4A6B6F;
+  color: white;
+  padding: 10px 20px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin: 0.5rem;
+}
+
+.login_button:hover {
+  background-color: #517073;
+  transform: translateY(-2px);
+}
+
+/* Styling for card body */
+.card_body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  
+}
+
+/* Styling for email and password sections */
+.email_section {
+  padding: rem;
+  border-radius: 3px;
+  
+}
+
+.email_section .form-label {
+  color: #333333;
+  margin-bottom: 0;
+}
+
+.email_section .form-control {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.email_section .form-control:focus {
+  border-color: #34373b;
+  box-shadow: 0 0 5px rgba(63, 66, 69, 0.5);
+}
+
+form {
+  padding: 1rem;
+}
+
+/* Card title */
+.card_title {
+  margin-top: 0.5rem;
+ margin-left: 175px;
+  font-size: 35px;
+  color: #4A6B6F;
+}
+
+/* Text for the link */
+.text-Primary {
+  color: #37393a;
+  font-size: 16px;
+  text-align: center;
+}
+
+.text-Primary a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.text-Primary a:hover {
+  color: #003366;
+  text-decoration: underline;
+}
+
+/* Image styles */
+.imag {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.card-icon {
+  position: absolute;
+  width: 75px;
+  left: 15px;
+}

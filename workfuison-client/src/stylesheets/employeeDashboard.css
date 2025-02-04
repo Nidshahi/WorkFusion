@@ -1,0 +1,79 @@
+/* General styles */
+html, body {
+  background-color: #7AB7BE;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* Prevent the entire page from scrolling */
+}
+
+.employee-dashboard {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 10px;
+  background-color: #19394D; 
+}
+.brand-logo {
+  height: 30px;
+  margin-right: 10px;
+}
+
+/* Vertical Sidebar */
+.vertical-nav {
+  width: 250px;
+  height: calc(100vh - 57px); 
+  position: fixed;
+  top: 57px; 
+  left: 0;
+  padding-top: 20px;
+  border-right: 1px solid #ccc;
+  overflow-y: auto;
+  background-color: #19394D;
+}
+
+.vertical-nav .nav-link {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  color: #ccc;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.vertical-nav .nav-link:hover {
+  background-color: #28586E;
+  color: white;
+}
+
+.vertical-nav .nav-link i {
+  margin-right: 10px;
+  font-size: 18px; 
+}
+
+.vertical-nav .nav-link.active {
+  background-color: #28586E;
+  color: white;
+}
+
+
+.content {
+  position: absolute; 
+  top: 57px;
+  left: 250px;
+  right: 0; 
+  bottom: 0; 
+  padding: 20px; 
+  overflow-y: auto; 
+  background-color: rgb(211, 211, 211); 
+}

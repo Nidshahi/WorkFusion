@@ -1,0 +1,130 @@
+html,body {
+  
+  margin: 0;
+  padding: 0;
+  background-color: #7AB7BE; }
+.body{
+  background-color: #7AB7BE ;
+  min-height: 100vh;
+}
+.section1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.login_button{
+  background-color: #4A6B6F; 
+  color: white; 
+  padding: 10px 20px; 
+  width: 100%;
+  border: none; 
+  border-radius: 5px;
+  font-size: 16px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin: 0.5rem;
+}
+.login_button:hover {
+  background-color: #517073; 
+  transform: translateY(-2px); 
+}
+.card_body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.email_section{
+  padding: 1rem;
+  border-radius: 3px;
+}
+.email_section .form-label {
+  
+  color: #333333
+}
+
+.email_section .form-control {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.email_section .form-control:focus {
+  border-color: #34373b;
+  box-shadow: 0 0 5px rgba(63, 66, 69, 0.5);
+}
+form{
+padding: 1rem;
+
+  
+  
+}
+
+.card_title{
+  margin-top: 0.5rem;
+  font-size:35px ;
+  color: #4A6B6F;
+}
+.text-Primary {
+  color: #37393a; /* Bootstrap primary blue color */
+  font-size: 16px;
+  
+  text-align: center; /* Center align the text */
+  
+}
+
+.text-Primary a {
+  color: #0056b3; /* Slightly darker blue for the link */
+  text-decoration: none; /* Remove underline from the link */
+}
+
+.text-Primary a:hover {
+  color: #003366; /* Darker blue on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
+.imag{
+  position: relative;
+  margin-top: 1rem;
+}
+.card-icon{
+  position: absolute;
+  width: 75px;
+  right: 240px;
+}
+.select1 {
+   width: 92%;/* Make it full width */
+  padding: 10px; /* Add some padding */
+  margin-top: 10px; /* Add spacing */
+  margin-bottom: 20px;
+  margin-left: 13px; 
+  margin-right: px;/* Add spacing */
+  font-size: 16px; /* Font size */
+  color: #495057; /* Text color */
+  border: 1px solid #ced4da; /* Border style */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #f8f9fa; /* Background color */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+/* Hover and focus effects */
+.select1:hover {
+  border-color: #353a3e; /* Change border color on hover */
+  box-shadow: 0 0 5px rgba(52, 55, 58, 0.5); /* Add a glow effect */
+}
+
+.select1:focus {
+  border-color: #32373b; /* Focus border color */
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 8px rgba(58, 65, 73, 0.5); /* Glow effect */
+}
+
+/* Style the dropdown options */
+.select1 option {
+  font-size: 16px; /* Font size for options */
+  padding: 10px; /* Add padding to options */
+}
